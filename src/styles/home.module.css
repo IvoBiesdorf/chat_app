@@ -1,0 +1,324 @@
+.home{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background-color: #CCC;
+}
+.login{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    min-height: 250px;
+    min-width: 250px;
+    background-color: rgba(34,61,168, 1);
+    -webkit-box-shadow: 0px 0px 5px 1px rgba(34,61,168,0.5);
+    box-shadow: 0px 0px 5px 1px rgba(34,61,168,0.5);
+    padding: 25px;
+    border-radius: 6px;
+    margin: 100px auto auto auto;
+}
+.title{
+    font-size: 2rem;
+    color: #EEE;
+    font-weight: 700;
+}
+.input{
+    height: 40px;
+    width: 100%;
+    border-radius: 5px;
+    padding: 0 6px;
+    border: 0.5px solid #CCC;
+}
+.input:hover, .input:active , .input:focus, .btn:active{
+    outline: none;
+}  
+.btn{
+    height: 40px;
+    border-radius: 5px;
+    background-color: #EEE;
+    border: 0.5px solid #CCC;
+    padding: 0 20px;
+}
+.btn:hover{
+    background-color: #CCC;
+    cursor: pointer;
+}
+.lista{
+    width: 40%;
+    margin: 0;
+    background-color: #EEE;
+    overflow: hidden;
+    border-right: 0.5px solid rgb(34, 61, 168);
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+}
+.users{
+    height: calc(100% - 50px);
+    width: 100%;
+    overflow-x: auto;
+}
+.lista h3{
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    background-color: rgb(34, 61, 168);
+    height: 50px;
+    font-size: 1.4rem;
+    color: #FFF;
+}
+.lista .pi{
+    /* height: 60px; */
+    font-size: 1.2rem;
+    border-bottom: 0.3px solid #CCC;
+    background-color: #DDD;
+}
+.lista .pp{
+    /* height: 60px; */
+    font-size: 1.2rem;
+    border-bottom: 0.3px solid #CCC;
+    background-color: #FFF;
+}
+.cabecalho{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 60px;
+    padding: 0 10px;
+    background-color:  rgb(34,61,168);
+    border-top-right-radius: 6px;
+    font-size: 2.2rem;
+    color: #EEE;
+}
+.chat{
+    width: 100%;
+}
+.corpo{
+    display: flex;
+    max-width: 1000px;
+    margin: 25px auto;
+    height: calc(100% - 110px);
+    border: 1px solid rgb(34, 61, 168);
+    border-radius: 6px;
+    padding: 0;
+    overflow: hidden;
+}
+.cardMessages{
+    border-top-right-radius: 6px;
+    height: 100%;
+    width: 60%;
+    overflow: hidden;
+}
+.voidCard{
+    height: 100%;
+    width: 60%;
+    margin: 0 0 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: rgb(34, 61, 168);
+    font-size: 2rem;
+}
+.voidCard span{
+    font-size: 3rem;
+    font-weight: 200;
+}
+.messages{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 60%;
+    background-color: #EEE;
+    margin: 25px 0;
+    border-right: 0.5px solid rgb(34, 61, 168);
+    border-top: 0.5px solid rgb(34, 61, 168);
+    border-bottom: 0.5px solid rgb(34, 61, 168);
+    overflow: hidden;
+    border-bottom-right-radius: 6px;
+    border-top-right-radius: 6px;
+}
+.messageBox{
+    height: calc(100% - 90px);
+    width: 100%;
+    overflow: auto;
+    padding: 10px;
+}
+.userchat{
+    display: flex;
+    height: 50px;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: rgb(34, 61, 168);
+    padding: 0 10px;
+    color: #EEE;
+    font-size: 1.4rem;
+    border-top: 1px solid rgb(34, 61,168);
+    border-right: 1px solid rgb(34, 61,168);
+    border-left: 0.4px solid;
+}
+.user{
+    display: flex;
+    border: 0.4px solid #CCC;
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+}
+.boxUsr{
+    width: 100%;
+    padding-left: 12px;
+}
+.user>div{
+ color: #777;
+}
+.usr{
+    font-size: 1.6rem;
+    color: #222;
+}
+.firstMsg{
+    width: 100%;
+    height: 50%;
+    font-size: 1rem;
+    font-weight: 200;
+}
+.user:hover{
+    cursor: pointer;
+    background-color: rgba(0,0,0,0.1);
+}
+.close{
+    font-size: 25px;
+}
+.close:hover{
+    color: red;
+    cursor: pointer;
+    font-weight: 800;
+    transition: all 500ms;
+}
+.close:not(:hover){
+    font-weight: 300;
+    transition: all 500ms;
+}
+.msg{
+    display: flex;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    min-height: 35px;
+    padding: 1px 8px;
+}
+.msg div{
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    min-width: 30px;
+    padding: 3px 8px;
+    font-size: 1.3rem;
+}
+.msgLeft{
+    position: relative;
+    background-color: rgba(0,0,0, 0.8);
+    border-radius: 10px;
+    border-bottom-left-radius: 0;
+    color: white;
+}
+.msgRight{
+    margin: 0 0 0 auto;
+    background-color: rgb(34, 61, 168);
+    color: white;
+    border-radius: 10px;
+    border-bottom-right-radius: 0;
+}
+.newMsg{
+    background-color: #00A;
+}
+.oldMsg{
+    background-color: #A00;
+}
+.azul{
+    color: blue;
+}
+.inputMsg{
+    display: flex;
+    width: 100%;
+    height: 40px;
+    border-top: 1px solid rgb(34, 61, 168);
+    /* border-bottom-left-radius: 5px; */
+}
+.inputMsg input{
+    width: 75%;
+    height: 40px;
+    padding: 0 5px;
+    /* border-bottom-left-radius: 5px; */
+    border: none;
+}
+.inputMsg button{
+    width: 25%;
+    height: 40px;
+    border-left: 1px solid rgb(34, 61, 168);
+    background-color: rgba(34, 61, 168, 0.4);
+    /* border-bottom-right-radius: 5px; */
+    border: none;
+}
+.inputMsg button:active, 
+.inputMsg button:focus{
+    outline: 1px solid rgb(34, 61, 168);
+    background-color: rgba(34, 61, 168, 0.6);
+}
+.inputMsg button:hover{
+    background-color: rgb(34, 61, 168);
+    color: white;
+    cursor: pointer;
+}
+.inputMsg input:active, 
+.inputMsg input:focus{
+    outline: 1px solid rgb(34, 61, 168);
+}
+.inputMsg input:focus, .inputMsg input:active{
+    outline: none;
+    background-color: #DDD;
+}
+
+@media screen and (max-width:600px ){
+    .home{
+        height: calc(100vh - 60px);
+        background-color: white;
+    }
+    .cabecalho{
+        font-size: 1.2rem;
+    }
+    .corpo{
+        margin-top: 0;
+    }
+    .cardMessages{
+        display: flex;
+        position: absolute;
+        left: 0px;
+        top: 63px;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+        background-color: #EEE;
+        margin: 5px auto;
+        border: 0.5px solid rgb(34, 61, 168);
+        overflow: hidden;
+        border-radius: 6px;
+        height: calc(100vh - 130px);
+    }
+    .voidCard{
+        display: none;
+    }
+    .lista{
+        width: 100%;
+        height: 100%;
+        margin: 5px 0;
+        margin: 10px auto;
+        border-radius: 0;
+        background-color: #FFF;
+        border-radius: 6px;
+    }
+    .corpo{
+        border: none;
+    }
+}

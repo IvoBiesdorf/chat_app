@@ -10,7 +10,13 @@ export default function SocketHandler(req, res) {
         res.end();
         return;
     }
-    const io = new Server(res.socket.server);
+   // const io = new Server(res.socket.server);
+    const io = new Server(httpServer, {
+        cors: {
+          origin: ["https://chat-app-ivobiesdorf.vercel.app/"],
+          credentials: false
+        }
+      });
     res.socket.server.io = io;
 
     io.on("connection", function(socket){
